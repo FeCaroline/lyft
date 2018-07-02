@@ -1,3 +1,301 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height:20px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('../assets/images/hero.gif'), linear-gradient( #76278F, #2B1E66, transparent);
+  background-repeat: no-repeat;
+  background-position: 0px -120px;
+  background-size: 100% auto;
+
+}
+
+header div#topo {
+  order: 0;
+  flex: 0 1 20%;
+  height: 80px;
+  padding: 20px 0px 0px 40px;
+}
+
+header div#topo img#logo {
+  width: 50px;
+}
+
+.menu {
+  order: 1;
+  flex: 0 1 80%;
+  height: 140px;
+  text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0px 12px;
+  color: #fff;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.menu ul li.login {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 160px;
+}
+
+header div#placeHolder {
+  order: 2;
+  flex: 0 1 60%;
+}
+
+header form#becomeDriver {
+    order: 2;
+    flex: 0 2 40%;
+    background-color: #fff;
+    padding: 50px 0px 0px 50px;
+    border: 1px solid black;
+    margin-left: auto;
+    height: 380px;
+}
+
+header form#becomeDriver span.title {
+  width: 260px;
+  display: block;
+  color: #352384;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0px 0px 20px 0px;
+}
+
+header form#becomeDriver span.subtitle {
+  display: block;
+  color: #352384;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+input#phone {
+  border: 0;
+  border-bottom: 1px solid #352384;
+  width: 90%;
+  font-size: 15px;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  border: 0px;
+  border-radius: 8px;
+  padding: 12px 18px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #FF00BF;
+  margin-bottom: 20px;
+}
+
+header form#becomeDriver a {
+  margin-left: 20px;
+  color: #777;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header form#becomeDriver span.more {
+  display: block;
+  width: 100%;
+  color: #728099;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+section#phone {
+  width: 100%;
+  height: 600px;
+  padding: 100px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background:linear-gradient( #76278F, #2B1E66 );
+  background-size: 100% auto;
+}
+
+section#phone div#text {
+  order: 0;
+  flex: 0 1 50%;
+  font-size: 14px;
+  color: #fff;
+}
+
+section#phone div#text span.header {
+  display: block;
+  margin: 12px 0px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+section#phone div#image img {
+  width: 450px;
+}
+
+section.videoSection {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.videoSection div.content {
+  flex: 0 1 32%;
+  background-color: #fff;
+  padding: 40px 40px;
+  color: #000;
+  font-weight: 900;
+}
+
+section.videoSection div.content.left {
+  order: 0;
+}
+
+section.videoSection div.content.right {
+  order: 2;
+}
+
+section.videoSection div.content span.watch {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+section.videoSection div.content span.title {
+  display: block;
+  width: 100%;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+section.videoSection div.video {
+  order: 1;
+  flex: 0 1 68%;
+}
+
+section.videoSection div.video iframe {
+  border: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333447;
+  color: #fff;
+}
+
+footer div.menuList {
+  height: 300px;
+  flex: 0 1 20%;
+  padding: 40px 60px;
+}
+
+footer div.menuList ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+footer div.menuList ul li {
+  margin: 0px 12px;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px;
+}
+
+footer div.menuList ul li.header {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer div.icons {
+  height: 300px;
+  flex: 0 1 30%;
+  padding: 40px 40px;
+}
+
+footer div.icons img {
+  display: block;
+  width: 120px;
+  border: 0px;
+  margin-top: 40px;
+}
+
+footer div.smallicons {
+  height: 40px;
+  flex: 0 1 100%;
+  align-self: center;
+  text-align:center;
+}
+
+footer div.smallicons img {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+footer div.hr {
+  flex: 0 1 100%;
+  height: 0px;
+}
+
+footer div.hr hr {
+    border-bottom: 1px solid white;
+    width: 60%;
+}
+
+footer div.copyright {
+  display: block;
+  flex: 0 1 100%;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
